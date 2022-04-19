@@ -9,7 +9,7 @@ type Props = {
 // url: "https://asos2.p.rapidapi.com/products/v3/detail"
 // id: "9851612"
 
-const useFetch = (url, id) => {
+const useFetch = (url, id): Props => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);

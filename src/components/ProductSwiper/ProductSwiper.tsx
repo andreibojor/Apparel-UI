@@ -13,7 +13,7 @@ type Props = {};
 const ProductSwiper = ({ slides }: Props) => {
   const productSlides = slides.map((item) => (
     <SwiperSlide key={item.type}>
-      <SwiperImage src={`https://${item.url}`} alt={item.url} />
+      <SwiperImage src={`https://${item.url}`} alt="" />
     </SwiperSlide>
   ));
   return (

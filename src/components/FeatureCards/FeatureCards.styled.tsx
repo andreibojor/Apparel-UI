@@ -15,7 +15,7 @@ export const FeatureCardContainer = styled.div`
   box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
   border-radius: 6px;
   transition: all 0.3s ease-in-out;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
   &:hover {
     transform: translateY(-5px);
