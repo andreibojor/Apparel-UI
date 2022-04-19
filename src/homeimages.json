@@ -1,0 +1,114 @@
+{
+  "featureimages": [
+    {
+      "id": 1,
+      "image": "./images/featureimages/men/feature-image1.avif",
+      "alt": "Feature Image",
+      "title": "SIMPLE SHIRTS",
+      "description": "Zero-fuss finds",
+      "category": "feature",
+      "gender": "men"
+    },
+    {
+      "id": 2,
+      "image": "./images/featureimages/men/feature-image2.avif",
+      "alt": "Feature Image",
+      "title": "MATCHY-MATCHY",
+      "description": "Get on board with co-ords",
+      "category": "feature",
+      "gender": "men"
+    },
+    {
+      "id": 3,
+      "image": "./images/featureimages/men/feature-image3.avif",
+      "alt": "Feature Image",
+      "title": "SUMMER SHOES",
+      "description": "Slide into the new season",
+      "category": "feature",
+      "gender": "men"
+    },
+    {
+      "id": 4,
+      "image": "./images/featureimages/men/feature-image4.avif",
+      "alt": "Feature Image",
+      "title": "ASOS DESIGN LOGOS",
+      "description": "Back it up",
+      "category": "feature",
+      "gender": "men"
+    },
+    {
+      "id": 5,
+      "image": "./images/featureimages/women/feature-image1.avif",
+      "alt": "Feature Image",
+      "title": "ACTIVEWEAR EDIT",
+      "description": "High-intensity looks",
+      "category": "feature",
+      "gender": "women"
+    },
+    {
+      "id": 6,
+      "image": "./images/featureimages/women/feature-image2.avif",
+      "alt": "Feature Image",
+      "title": "ESSENTIAL DRESSES",
+      "description": "Orange you excited?!",
+      "category": "feature",
+      "gender": "women"
+    },
+    {
+      "id": 7,
+      "image": "./images/featureimages/women/feature-image3.avif",
+      "alt": "Feature Image",
+      "title": "SWIM WINS",
+      "description": "Cut out for the beach?",
+      "category": "feature",
+      "gender": "women"
+    },
+    {
+      "id": 8,
+      "image": "./images/featureimages/women/feature-image4.avif",
+      "alt": "Feature Image",
+      "title": "FACE + BODY BUYS",
+      "description": "Ft. the new collection from e.l.f.",
+      "category": "feature",
+      "gender": "women"
+    }
+  ],
+  "momentimages": [
+    {
+      "id": 1,
+      "image": "./images/momentimages/men/moment-image1.avif",
+      "alt": "Moment Image",
+      "title": "EVENT STYLE",
+      "description": "Ft. new Noak",
+      "category": "moment",
+      "gender": "men"
+    },
+    {
+      "id": 2,
+      "image": "./images/momentimages/men/moment-image2.avif",
+      "alt": "Moment Image",
+      "title": "JUST-IN JEWELLERY",
+      "description": "Stick your neck out",
+      "category": "moment",
+      "gender": "men"
+    },
+    {
+      "id": 3,
+      "image": "./images/momentimages/women/moment-image1.avif",
+      "alt": "Moment Image",
+      "title": "DISCO DREAMS",
+      "description": "Bead-i-ful looks",
+      "category": "moment",
+      "gender": "women"
+    },
+    {
+      "id": 4,
+      "image": "./images/momentimages/women/moment-image2.avif",
+      "alt": "Moment Image",
+      "title": "MISS SELFRIDGE",
+      "description": "Spring things",
+      "category": "moment",
+      "gender": "women"
+    }
+  ]
+}

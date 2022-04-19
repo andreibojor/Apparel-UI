@@ -3,6 +3,7 @@ import { Container } from "../styles/container";
 import HomeSwiper from "../components/HomeSwiper/HomeSwiper";
 import { MwContext } from "../contexts/MwContext";
 import FeatureCards from "../components/FeatureCards/FeatureCards";
+import homeimages from "../homeimages.json";
 
 type Props = {};
 
@@ -15,11 +16,18 @@ const Home = (props: Props) => {
         <HomeSwiper gender={genderCategory} />
       </Container>
       <Container>
-        <FeatureCards gender={genderCategory} />
+        <FeatureCards
+          gender={genderCategory}
+          layout="four"
+          data={homeimages.featureimages}
+        />
       </Container>
       <Container>
-        <img src="./images/momentimages/men/moment-image2-m.jpg" alt="asd" />
-        <img src="./images/momentimages/men/moment-image1-m.jpg" alt="asd" />
+        <FeatureCards
+          gender={genderCategory}
+          layout="two"
+          data={homeimages.momentimages}
+        />
       </Container>
     </>
   );
