@@ -4,4 +4,4 @@ Some components can be found commented in App.tsx file.
 
 The data is provided by an API that imitates asos.com.
 
-For this app I am using and developing my skills in React, styled-components and TypeScript
+For this app I am using and developing my skills in React, styled-components and TypeScript.
