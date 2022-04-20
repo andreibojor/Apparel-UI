@@ -17,7 +17,9 @@ import {
 } from "./Navbar.styled";
 import { MwContext } from "../../contexts/MwContext";
 
-type Props = {};
+interface Props {
+  topRowBtn: boolean;
+}
 
 const Navbar = (props: Props) => {
   const { setGenderCategory } = useContext(MwContext);
@@ -28,7 +30,7 @@ const Navbar = (props: Props) => {
       <NavbarContainer>
         <TopRowContainer>
           <NavGroup>
-            <NavItem topRowBtn onClick={() => setGenderCategory("men")}>
+            <NavItem topRowBtn={true} onClick={() => setGenderCategory("men")}>
               Men
             </NavItem>
             <NavItem topRowBtn onClick={() => setGenderCategory("women")}>

@@ -1,11 +1,14 @@
 import styled from "styled-components";
 
-export const FeatureCardsWrapper = styled.div`
+interface Props {
+  columns: string;
+}
+
+export const FeatureCardsWrapper = styled.div<Props>`
   display: grid;
   grid-template-columns: ${({ columns }) =>
-    columns === "four" ? "1fr 1fr 1fr 1fr;" : null};
-  grid-template-columns: ${({ columns }) =>
-    columns === "two" ? "1fr 1fr;" : null};
+    columns === "four" && "1fr 1fr 1fr 1fr;"};
+  grid-template-columns: ${({ columns }) => columns === "two" && "1fr 1fr;"};
   grid-column-gap: 2rem;
   column-gap: 2rem;
   margin-top: 2rem;
@@ -32,9 +35,14 @@ export const FeatureCard = styled.div`
 
   & h6 {
     text-align: center;
+    font-size: 1.25rem;
+    margin: 1rem 0;
+    font-weight: 700;
+    color: #181818;
   }
 
   & p {
     text-align: center;
+    font-size: 1rem;
   }
 `;

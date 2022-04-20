@@ -5,7 +5,9 @@ import { MwContext } from "../contexts/MwContext";
 import FeatureCards from "../components/FeatureCards/FeatureCards";
 import homeimages from "../homeimages.json";
 
-type Props = {};
+type Props = {
+  // genderCategory: string;
+};
 
 const Home = (props: Props) => {
   const { genderCategory } = useContext(MwContext);
