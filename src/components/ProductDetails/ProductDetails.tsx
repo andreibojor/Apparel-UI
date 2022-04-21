@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container } from "../../styles/container";
 // import * as Icon from "ts-react-feather-icons";
-import useFetch from "../../hooks/useFetch";
+import useFetch from "../../hooks/useFetchProduct";
 import {
   AiFillHeart,
   AiOutlineHeart,

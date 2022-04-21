@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import React from "react";
+import styled, { StyledProps } from "styled-components";
 
 export const NavbarContainer = styled.div`
   background-color: #fff;
@@ -32,7 +33,12 @@ export const NavGroup = styled.ul`
   margin: 0;
 `;
 
-export const DropdownWrapper = styled.div`
+type DropdownWrapperProps = {
+  iconDropdown?: boolean;
+  navDropdown?: boolean;
+};
+
+export const DropdownWrapper = styled.div<DropdownWrapperProps>`
   position: absolute;
   /* top: 55px; */
   ${({ iconDropdown }) => iconDropdown && `right: -5px; top: 45px;`};
@@ -58,19 +64,25 @@ export const DropdownWrapper = styled.div`
   } */
 `;
 
-export const NavItem = styled.li`
+type NavItemProps = {
+  topRowBtn?: boolean;
+  topRowIcon?: boolean;
+};
+
+export const NavItem = styled.li<NavItemProps>`
   height: 100%;
   cursor: pointer;
   padding: 1rem;
   font-weight: 600;
-  color: ${(props) => (props.topRowBtn ? "#ccc" : "#181818")};
+  color: ${({ topRowBtn }) => (topRowBtn ? "#ccc" : "#181818")};
   position: relative;
 
   &:active,
   &:hover {
-    color: ${(props) => (props.topRowBtn ? "#181818" : "#ccc")};
-    color: ${(props) => props.topRowIcon && "#181818"};
-    background-color: ${(props) => (props.topRowIcon ? "#f4f4f5" : "inherit")};
+    color: ${({ topRowBtn }) => (topRowBtn ? "#181818" : "#ccc")};
+    color: ${({ topRowIcon }) => topRowIcon && "#181818"};
+    background-color: ${({ topRowIcon }) =>
+      topRowIcon ? "#f4f4f5" : "inherit"};
   }
 
   &:hover {

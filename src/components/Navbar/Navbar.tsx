@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { FC, useContext, useState } from "react";
 import {
   AiOutlineUser,
   AiOutlineHeart,
@@ -17,11 +17,11 @@ import {
 } from "./Navbar.styled";
 import { MwContext } from "../../contexts/MwContext";
 
-interface Props {
-  topRowBtn: boolean;
-}
+// interface Props {
+//   // topRowBtn: boolean;
+// }
 
-const Navbar = (props: Props) => {
+const Navbar: FC = (props) => {
   const { setGenderCategory } = useContext(MwContext);
   // const [toggleDropdown, setToggleDropdown] = useState(false);
 
@@ -30,7 +30,7 @@ const Navbar = (props: Props) => {
       <NavbarContainer>
         <TopRowContainer>
           <NavGroup>
-            <NavItem topRowBtn={true} onClick={() => setGenderCategory("men")}>
+            <NavItem topRowBtn onClick={() => setGenderCategory("men")}>
               Men
             </NavItem>
             <NavItem topRowBtn onClick={() => setGenderCategory("women")}>
